@@ -82,7 +82,7 @@ jobs:
 
       - name: 'Docker auth'
         run: |-
-          gcloud auth configure-docker ${{ env.GAR_LOCATION }}-docker.pkg.dev
+          gcloud auth configure-docker gcr.io
 
       - name: Build and Push Container
         run: |-
